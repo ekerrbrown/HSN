@@ -10,9 +10,6 @@ background: linear-gradient(0deg, rgba(249,249,249,1) 0%, rgba(179,52,242,1) 38%
 
 }
 
-.heroColumn{
-    margin-top: 0;
-}
 nav{
     display: flex;
     width: 100%;
@@ -75,8 +72,12 @@ nav{
     }
     .alignText{
         display: grid;
+        max-width: 80%;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
+        background-color: white;
+        margin: 20px auto;
+
     }
     .matchTxtToImg{
         max-width: 60%;
@@ -97,8 +98,11 @@ nav{
 }
 
 .preHeroSection {
-    max-width: 80%;
-    background-color: white;
+    
+    background-image: url("Images/HSN-Banner.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    
     margin: 20px auto;
     padding: 10px 0 0 0;
 }
@@ -136,10 +140,21 @@ footer{
     background-color: black;
 }
 h1{
-    padding: 0px 30px 0 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 20px;
+    background: rgba(0, 0, 0, .75);
+    color: white;
+    text-align: center;
 }
 .movePlayhead{
 align-self: center;
+color: white;
+}
+.fa-play-circle-o{
+    background: rgba(0, 0, 0, .5);
+    margin: auto;
+    padding: 10px;
+    justify-self: start;
 }
 .footerTxt{
     color: white;
@@ -159,4 +174,5 @@ color: white;
     display: flex;
     align-items: center;
 }
+
 }
