@@ -97,12 +97,11 @@ nav{
     margin: 20px auto;
 }
 
-.preHeroSection {
-    
+#preHeroSection {
+    height: 210px;
     background-image: url("Images/HSN-Banner.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat:no-repeat;
-    
     margin: 20px auto;
     padding: 10px 0 0 0;
 }
@@ -135,7 +134,6 @@ nav{
 footer{
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
     height: 100px;
     background-color: black;
 }
@@ -161,14 +159,19 @@ color: white;
     text-align: center;
     margin: auto;
 }
+
 .socialMedia{
+    display: flex;
     max-width: 100%;
     background-color: #CC1F00;
-    text-align: center;
+    justify-content: center;
+    align-content: center;
+    
 }
 .fa-twitter, .fa-facebook, .fa-instagram, .fa-youtube {
-    padding: 10px;
-color: white;
+    color: white;
+    margin: auto 10px;
+    
 }
 .alignFooterTxt{
     display: flex;
